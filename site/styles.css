@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 100vw;
+    max-height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container{
+    width: 1000px;
+    max-width: 1000px;
+    margin: 10px auto;
+}
+h1{
+    text-align: center;
+}
+
+.menu-container{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-container .container{
+    background-color: rgb(204, 186, 186);
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid black;
+    position: relative;
+    padding-top: 30px;
+}
+
+
+p{
+    position: absolute;
+    background-color: red;
+    padding: 5px;
+    right: 0;
+    top: 0;
+    font-weight: 400;
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+}
+
+#one{
+    background-color: palevioletred;
+}
+
+#two{
+    background-color: red;
+    color: #fff;
+}
+
+#three{
+    background-color: rgb(220, 220, 130);
+}
+
+
+
+
+
+/* uncomment the code below for media Querie to take effect */
+@media(max-width:1000px){
+
+    .container{
+        width: 500px;
+        max-width: 500px;
+        text-align: center;
+    }
+    .menu-container{
+        display: block;
+    }
+
+    .menu-container .container{
+        width: 250px;
+        margin: 10px auto;
+    }
+}
